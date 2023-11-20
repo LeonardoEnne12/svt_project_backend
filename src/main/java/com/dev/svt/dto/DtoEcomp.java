@@ -1,4 +1,4 @@
-package com.devsuperior.sam.dto;
+package com.dev.svt.dto;
 
 import java.util.List;
 

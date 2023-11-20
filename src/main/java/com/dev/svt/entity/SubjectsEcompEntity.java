@@ -1,4 +1,4 @@
-package com.devsuperior.sam.entity;
+package com.dev.svt.entity;
 
 import java.util.List;
 import javax.persistence.CollectionTable;
@@ -13,7 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SAM_ECOMPSUBJECTS")
+@Table(name = "SVT_ECOMPSUBJECTS")
 public class SubjectsEcompEntity {
 
     @Id

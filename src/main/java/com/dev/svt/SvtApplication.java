@@ -1,13 +1,13 @@
-package com.devsuperior.sam;
+package com.dev.svt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SamApplication {
+public class SvtApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SamApplication.class, args);
+		SpringApplication.run(SvtApplication.class, args);
 	}
 
 }

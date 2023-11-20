@@ -1,4 +1,4 @@
-package com.devsuperior.sam.repository;
+package com.dev.svt.repository;
 
 import java.util.List;
 
@@ -9,14 +9,14 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.sam.entity.SubjectsEcompEntity;
+import com.dev.svt.entity.SubjectsEcompEntity;
 
 @Repository
 public interface SubjectsEcompRepository extends JpaRepository<SubjectsEcompEntity, Long> {
 	
 	@Transactional
 	@Modifying
-	@Query(value = "INSERT INTO SAM_ECOMPSUBJECTS (CURRICULARUNIT, WORKLOAD, CREDIT) VALUES (:curricularUnit, :workload, :credit)", nativeQuery = true)
+	@Query(value = "INSERT INTO SVT_ECOMPSUBJECTS (CURRICULARUNIT, WORKLOAD, CREDIT) VALUES (:curricularUnit, :workload, :credit)", nativeQuery = true)
 	int insertSubject(@Param("curricularUnit") String curricularUnit,
 	                  @Param("workload") Integer workload,
 	                  @Param("credit") Integer credit);
@@ -33,7 +33,7 @@ public interface SubjectsEcompRepository extends JpaRepository<SubjectsEcompEnti
 	int insertPosition(@Param("id") Long id,
 	                   @Param("position") Integer position);
 
-	@Query(value = "SELECT IDSUBJECTS FROM SAM_ECOMPSUBJECTS WHERE CURRICULARUNIT = :curricularUnit", nativeQuery = true)
+	@Query(value = "SELECT IDSUBJECTS FROM SVT_ECOMPSUBJECTS WHERE CURRICULARUNIT = :curricularUnit", nativeQuery = true)
 	Long findSubjectIdsByCurricularUnit(@Param("curricularUnit") String curricularUnit);
 	
 	@Query("SELECT s FROM SubjectsEcompEntity s")

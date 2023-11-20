@@ -1,11 +1,11 @@
-package com.devsuperior.sam.controller;
+package com.dev.svt.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.devsuperior.sam.dto.DtoEcomp;
-import com.devsuperior.sam.service.SubjectsEcompService;
+import com.dev.svt.dto.DtoEcomp;
+import com.dev.svt.service.SubjectsEcompService;
 
 import java.util.List;
 

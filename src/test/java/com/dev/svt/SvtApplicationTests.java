@@ -1,10 +1,10 @@
-package com.devsuperior.sam;
+package com.dev.svt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SamApplicationTests {
+class SvtApplicationTests {
 
 	@Test
 	void contextLoads() {

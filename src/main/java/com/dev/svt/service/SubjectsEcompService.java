@@ -1,4 +1,4 @@
-package com.devsuperior.sam.service;
+package com.dev.svt.service;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -8,9 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.devsuperior.sam.dto.DtoEcomp;
-import com.devsuperior.sam.entity.SubjectsEcompEntity;
-import com.devsuperior.sam.repository.SubjectsEcompRepository;
+import com.dev.svt.dto.DtoEcomp;
+import com.dev.svt.entity.SubjectsEcompEntity;
+import com.dev.svt.repository.SubjectsEcompRepository;
 
 @Service
 public class SubjectsEcompService {
